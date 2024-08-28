@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="h-[400px] flex items-center justify-center">
+        <div class="container p-28">
+            <div class="flex">
+                <div class="flex-auto">
+                    <input type="number" id="num1" class="border-2 border-black w-[135px] h-[50px] text-right"/>
+                </div>
+                <div class="flex-auto">
+                    <select id="operator1" class="border border-black w-[75px] h-[50px] text-center text-2xl">
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                        <option value="*">×</option>
+                        <option value="/">÷</option>
+                    </select>
+                </div>
+                <div class="flex-auto">
+                    <input type="number" id="num2" class="border-2 border-black w-[135px] h-[50px] text-right"/>
+                </div>
+                <div class="flex-auto">
+                    <select id="operator2" class="border border-black w-[75px] h-[50px] text-center text-2xl">
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                        <option value="*">×</option>
+                        <option value="/">÷</option>
+                    </select>
+                </div>
+                <div class="flex-auto">
+                    <input type="number" id="num3" class="border-2 border-black w-[135px] h-[50px] text-right"/>
+                </div>
+                <div class="flex-auto">
+                    <button onclick="performCalculation()" type="button" id="calculate" class="w-[85px] h-[50px] text-white bg-cyan-800 hover:bg-cyan-900 rounded">=</button>
+                </div>
+                <div class="flex-auto">
+                    <input type="text" id="result" class="border-2 border-black w-[135px] h-[50px] text-center" readonly/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex items-center justify-center">
+        <div class="text-red-500 hidden" id="error-popup">
+            Error
+        </div>
+    </div>
+    <div class="container p-28">
+        <div class="flex">
+            <div class="flex-auto w-72"></div>
+            <div class="w-28 float-left">           
+                <button onclick="reset()" type="button" id="calculate" class="w-[85px] h-[50px] text-white bg-cyan-800 hover:bg-cyan-900 rounded">RESET</button>
+            </div>
+        </div>
+    </div>
+    <script src="/eel.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
