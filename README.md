@@ -38,12 +38,15 @@ pip install eel
 ```bash
 cd calculator
 ```
-
-2. Run the following command to start the Calculator application:
+2. In order for CSS to work run:
+```bash
+npm run tw:watch
+```
+3. Run the following command to start the Calculator application:
 ```bash
 python main_script.py
 ```
-3. Application will open as a new Window of your browser. If you wish to run it on any other browser use the URL below.
+4. Application will open as a new Window of your browser. If you wish to run it on any other browser use the URL below.
 ```bash
 http://localhost:8000/main.html
 ```
@@ -52,11 +55,15 @@ http://localhost:8000/main.html
 ```bash
 cd todolist
 ```
-2. Run the following command to start the Calculator application:
+2. In order for CSS to work run:
+```bash
+npm run tw:watch
+```
+3. Run the following command to start the Calculator application:
 ```bash
 python main_script.py
 ```
-3. Application will open as a new Window of your browser. If you wish to run it on any other browser use the URL below.
+4. Application will open as a new Window of your browser. If you wish to run it on any other browser use the URL below.
 ```bash
 http://localhost:8000/main.html
 ```
