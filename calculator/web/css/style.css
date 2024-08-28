@@ -588,6 +588,10 @@ video {
   }
 }
 
+.float-left {
+  float: left;
+}
+
 .flex {
   display: flex;
 }
@@ -596,12 +600,20 @@ video {
   display: none;
 }
 
-.h-\[300px\] {
-  height: 300px;
+.h-\[400px\] {
+  height: 400px;
 }
 
 .h-\[50px\] {
   height: 50px;
+}
+
+.w-28 {
+  width: 7rem;
+}
+
+.w-72 {
+  width: 18rem;
 }
 
 .w-\[135px\] {

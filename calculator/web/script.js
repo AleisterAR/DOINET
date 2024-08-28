@@ -1,50 +1,18 @@
+document.addEventListener('DOMContentLoaded', function() {
+  const invalidChars = ['e', '+'];
 
-
-function validateInput(element) {
-    const value = element.value;
-    const regex = /^-?\d+(\.\d+)?$/;
-    if (!regex.test(value)) {
-        element.reportValidity();
-    } else {
-        element.setCustomValidity('');
-    }
-}
-
-var invalidChars = [
-    "+",
-    "e",
-    "-"
-  ];
-  
-document.getElementById("num1").addEventListener("input", function() {
-    this.value = this.value.replace(/[e\+\-]/gi, "");
+  ['num1', 'num2', 'num3'].forEach(id => {
+      const inputField = document.getElementById(id);
+      inputField.addEventListener('keydown', function(e) {
+          if (invalidChars.includes(e.key.toLowerCase())) {
+              e.preventDefault();
+          }
+      });
+      inputField.addEventListener('input', function() {
+          this.value = this.value.replace(/[e\+]/g, '');
+      });
   });
-  
-document.getElementById("num1").addEventListener("keydown", function(e) {
-    if (invalidChars.includes(e.key)) {
-      e.preventDefault();
-    }
-  });
-
-  document.getElementById("num2").addEventListener("input", function() {
-    this.value = this.value.replace(/[e\+\-]/gi, "");
-  });
-  
-document.getElementById("num2").addEventListener("keydown", function(e) {
-    if (invalidChars.includes(e.key)) {
-      e.preventDefault();
-    }
-  });
-
-  document.getElementById("num3").addEventListener("input", function() {
-    this.value = this.value.replace(/[e\+\-]/gi, "");
-  });
-  
-document.getElementById("num3").addEventListener("keydown", function(e) {
-    if (invalidChars.includes(e.key)) {
-      e.preventDefault();
-    }
-  });
+});
 
 async function performCalculation() {
     const num1 = document.getElementById('num1').value;
