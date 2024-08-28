@@ -1,69 +1,74 @@
-# Python Eel Projects
+# Python Eel プロジェクト
 
-This repository contains two applications built using Python Eel, vanilla JavaScript, and Tailwind CSS:
+このリポジトリには、Python Eel、バニラ JavaScript、Tailwind CSS を使用して構築された2つのアプリケーションが含まれています。
 
-1. **Calculator Application**
-2. **To-Do List Application**
+1. **計算機アプリケーション**
+2. **To-Do リストアプリケーション**
 
-## Overview
+## 概要
 
-### Calculator Application
+### 計算機アプリケーション
 
-A basic calculator that supports arithmetic operations such as addition, subtraction, multiplication, and division.
+加算、減算、乗算、除算などの算術演算をサポートする基本的な計算機です。
 
-### To-Do List Application
+### To-Do リストアプリケーション
 
-A to-do list manager that allows users to add tasks with a name and due date, mark tasks as completed, and remove tasks. Tasks are sorted by completion status and date, with completed tasks appearing at the bottom.
+タスクに名前と期限を追加し、タスクを完了済みとしてマークし、タスクを削除することができる To-Do リストマネージャーです。タスクは完了状況と日付でソートされ、完了済みのタスクは下部に表示されます。
 
-## Installation
+## インストール
 
-### Prerequisites
+### 前提条件
 
-- Python 3.x installed on your system
-- `pip` (Python package installer)
+- Python 3.x がシステムにインストールされていること
+- `pip`（Python パッケージインストーラー）
 
-### Install Python Eel
+### Python Eel のインストール
 
-To run these applications, you need to install the `Eel` library. You can do this by running:
+これらのアプリケーションを実行するには、`Eel` ライブラリをインストールする必要があります。次のコマンドを実行してインストールできます。
 
 ```bash
 pip install eel
 ```
 
-## Running the Applications
+## アプリケーションの実行
 
-### 1. Calculator Application
-
-1. Navigate to the `calculator` directory within the repository:
+### 1. 計算機アプリケーション
+#### 1. ブラウザベース
+1. リポジトリ内の `calculator` ディレクトリに移動します:
 ```bash
 cd calculator
 ```
-2. In order for CSS to work run:
+2. CSS を適用するために、次のコマンドを実行します:
 ```bash
 npm run tw:watch
 ```
-3. Run the following command to start the Calculator application:
+3. 次のコマンドを実行して計算機アプリケーションを開始します:
 ```bash
 python main_script.py
 ```
-4. Application will open as a new Window of your browser. If you wish to run it on any other browser use the URL below.
+4. アプリケーションがブラウザの新しいウィンドウで開きます。他のブラウザで実行したい場合は、以下の URL を使用してください:
 ```bash
 http://localhost:8000/main.html
 ```
-### 2. To-Do List Application
-1. Navigate to the `todolist` directory within the repository:
+#### 2. アプリケーションベース
+`output`フォルダには `calculator.exe` という名前のアプリケーションが含まれており、それを実行してプログラムを起動します。
+### 2. To-Do リストアプリケーション
+#### 1. ブラウザベース
+1. リポジトリ内の `todolist` ディレクトリに移動します:
 ```bash
 cd todolist
 ```
-2. In order for CSS to work run:
+2. CSS を適用するために、次のコマンドを実行します:
 ```bash
 npm run tw:watch
 ```
-3. Run the following command to start the Calculator application:
+3. 次のコマンドを実行して計算機アプリケーションを開始します:
 ```bash
 python main_script.py
 ```
-4. Application will open as a new Window of your browser. If you wish to run it on any other browser use the URL below.
+4. アプリケーションがブラウザの新しいウィンドウで開きます。他のブラウザで実行したい場合は、以下の URL を使用してください:
 ```bash
 http://localhost:8000/main.html
 ```
+#### 2. アプリケーションベース
+`output`フォルダには `todolist.exe` という名前のアプリケーションが含まれており、それを実行してプログラムを起動します。
