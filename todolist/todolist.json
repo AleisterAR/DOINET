@@ -1,20 +1,3 @@
 [
-    {
-        "name": "To Pack",
-        "date": "2024-08-30",
-        "completed": false,
-        "id": "4f818db6-6a64-4a49-842a-5e38892f9497"
-    },
-    {
-        "name": "To Chill",
-        "date": "2024-09-07",
-        "completed": true,
-        "id": "3bbb3fd3-8d81-4e44-926e-aeeb16333f24"
-    },
-    {
-        "name": "To Sleep",
-        "date": "2024-08-31",
-        "completed": true,
-        "id": "1f2c3404-76fe-430d-bd71-bee9251b31f6"
-    }
+
 ]
