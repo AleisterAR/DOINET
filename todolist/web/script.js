@@ -5,14 +5,22 @@ document.addEventListener('DOMContentLoaded', function() {
 function addTask() {
     const name = document.getElementById('task-name').value.trim();
     const date = document.getElementById('task-date').value;
-
+    const year = new Date(date).getFullYear();
+    
+    if (year < 0 || year > 9999) {
+        alert('Please enter a valid four-digit year.');
+        return;
+    }
     if (name === '' || date === '') {
         alert('Please enter both task name and date');
         return;
     }
 
     const task = { name, date, completed: false };
-    eel.add_task(task);
+    success_message = eel.add_task(task);
+    if (!success_message){
+        alert('Something went wrong! Try again!');
+    }
     document.getElementById('task-name').value = '';
     document.getElementById('task-date').value = '';
 }
