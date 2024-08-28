@@ -40,7 +40,7 @@ function loadTasks() {
                     </div>
                     <p class="w-full text-grey-darkest ${task.completed ? 'line-through':''}">${task.name}</p>
                     <p class="w-full text-grey-darkest ${task.completed ? 'line-through':''}">${task.date}</p>
-                    <button class="flex-no-shrink p-2 ml-2 border-2 rounded" onclick="removeTask('${task.id}')" ${!task.completed ? 'disabled' : ''}>Remove</button>
+                    <button class="flex-no-shrink p-2 ml-2 border-2 rounded ${task.completed ? 'hover:text-red-500':''} " onclick="removeTask('${task.id}')" ${!task.completed ? 'disabled' : ''}>Remove</button>
                 </div>
             `;
             list.appendChild(itemDiv);

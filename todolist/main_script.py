@@ -8,7 +8,9 @@ TASKS_FILE = 'todolist.json'
 eel.init("web")
 
 def sort_tasks(tasks):
-    return sorted(tasks, key=lambda x: (not x['completed'], datetime.strptime(x['date'], "%Y-%m-%d")), reverse=True)
+    completed_sorts, uncompleted_sorts = [task for task in tasks if task['completed']], [task for task in tasks if not task['completed']]
+    all_sorted = sorted(uncompleted_sorts, key=lambda x: datetime.strptime(x['date'], "%Y-%m-%d"), reverse=True) + sorted(completed_sorts, key=lambda x: datetime.strptime(x['date'], "%Y-%m-%d"), reverse=True)
+    return all_sorted
 
 def load_tasks():
     if os.path.exists(TASKS_FILE):
